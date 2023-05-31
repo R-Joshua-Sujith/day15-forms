@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div></div>
+    <div class="mainbody">
+      <div>
+        <h3>Enter Details</h3>
+        <form
+          class="form"
+          onsubmit="event.preventDefault();onFormSubmit();"
+          autocomplete="off"
+        >
+          <div>
+            <input
+              type="text"
+              name="fullName"
+              id="firstname"
+              placeholder="Enter First Name"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              name="empCode"
+              id="lastname"
+              placeholder="Enter Last Name"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              name="salary"
+              id="address"
+              placeholder="Enter Address"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              name="city"
+              id="pincode"
+              placeholder="Enter Pincode"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              name="city"
+              id="gender"
+              placeholder="Enter Gender"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              name="city"
+              id="state"
+              placeholder="Enter State"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              name="city"
+              id="country"
+              placeholder="Enter Country"
+            />
+          </div>
+          <label class="validation-error hide" id="fullNameValidationError"
+            >All fields are required</label
+          >
+
+          <div>
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+      <div>
+        <h3>User Details</h3>
+        <table border="3" class="list" id="employeeList">
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Address</th>
+              <th>Pincode</th>
+              <th>Gender</th>
+              <th>State</th>
+              <th>Country</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Joshua</td>
+              <td>Sujith</td>
+              <td>Bangalore</td>
+              <td>560096</td>
+              <td>Male</td>
+              <td>Karnataka</td>
+              <td>India</td>
+              <td>
+                <a onClick="onEdit(this)">Edit</a>
+                <a onClick="onDelete(this)">Delete</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Sujith</td>
+              <td>Kumar</td>
+              <td>Chennai</td>
+              <td>600096</td>
+              <td>Male</td>
+              <td>Tamil Nadu</td>
+              <td>India</td>
+              <td>
+                <a onClick="onEdit(this)">Edit</a>
+                <a onClick="onDelete(this)">Delete</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(139, 138, 138);
+    opacity:0.8;
+}
+
+.mainbody{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin:50px auto;
+    gap:50px;
+    background-color: black;
+    opacity:0.8;
+    padding:50px;
+    border-radius: 15px;
+}
+
+.form{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    background-color: rgb(62, 62, 62);
+    color:white;
+    padding:20px;
+    opacity:0.8;
+    border-radius: 15px;
+    
+}
+
+.list{
+    padding:5px;
+    background-color: rgb(62, 62, 62);
+    color:white;
+    opacity:0.8;
+    border:none;
+    border-radius: 15px;
+}
+
+h3{
+    color:white;
+    align-items:center;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+input{
+    font-size: 14px;
+}
+
+.hide{
+    display:none;
+}
+
+label{
+    color:red;
+    font-weight: bold;
+    font-size:18px;
+}
